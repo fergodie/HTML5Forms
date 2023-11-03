@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="card border-light mb-3" style="max-width: 100rem;">
+            <div class="card-header">
+                <h1>Payment form example</h1>
+            </div>
+
+
+            <div class="dentro p-3">
+                <div class="alert alert-danger" role="alert">
+                    Some field are missing!!
+                </div>
+                <form class="Todo">
+                    <!--Primera Parte-->
+                    <div class="form-row d-flex">
+                        <div class="form-group col-md-5">
+                            <label for="inputEmail4">Card #</label>
+                            <input type="email" class="form-control" value="XXXXXXXXXX" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputEmail4">CVC #</label>
+                            <input type="email" class="form-control" value="000" id="inputEmail4">
+
+                        </div>
+                        <div class="form-group col-md-4">
+
+                            <label for="inputEmail4">Amount</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">State</label>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Pick State...</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationCustom05">Postal Code</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="recuadro col-6">
+                            <p>We accept</p>
+                            <div class="p-1 mb-2 bg-dark text-white rounded-pill h-auto d-inline-block widht: 120px">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1"><i class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3"><i class="fa-brands fa-cc-paypal"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox4" value="option4">
+                                    <label class="form-check-label" for="inlineCheckbox4"><i class="fa-solid fa-money-bill"></i></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <label for="exampleFormControlTextarea1">Menssage</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <p class="text-secondary">Add any notes here</p>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="card-footer text-right">
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
+
+
+        </div>
+
+
+
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
